@@ -1,0 +1,172 @@
+HTML Links
+    Links are found in nearly all web pages. Links allow users to click their way from page to page.
+
+    HTML Links - Hyperlinks
+    HTML links are hyperlinks.
+
+    You can click on a link and jump to another document.
+
+    When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+    Note:   - A link does not have to be text. 
+            - A link can be an image or any other HTML element!
+
+    Syntax:
+        <a href="url">link text</a>
+
+    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+    <a href="https://www.w3schools.com/">
+        Visit W3Schools.com!
+    </a>
+    
+    <a href="helloPage.html"> Link Two </a>
+    <a href="helloPage.html">
+        Link Two 
+    </a>
+
+
+    By default, links will appear as follows in all browsers:
+        - An unvisited link is underlined and blue
+        - A visited link is underlined and purple
+        - An active link is underlined and red
+
+
+
+Target Attribute
+    By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+    The target attribute specifies where to open the linked document.
+
+    The target attribute can have one of the following values:
+        _self       - Default. Opens the document in the same window/tab as it was clicked
+        _blank      - Opens the document in a new window or tab
+        _parent     - Opens the document in the parent frame
+        _top        - Opens the document in the full body of the window
+
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+    <a href="https://www.w3schools.com/" target="_blank">
+        Visit W3Schools!
+    </a>
+
+
+
+
+Absolute URLs vs. Relative URLs
+    Absolute URLs
+            <a href="https://www.w3.org/">W3C</a>
+            <a href="https://www.google.com/">Google</a>
+
+    Relative URLs
+            <a href="html_images.html">HTML Images</a>
+            <a href="/test/test.html">CSS Tutorial</a>
+
+
+
+
+Link Titles
+    The title attribute specifies extra information about an element. 
+    The information is most often shown as a tooltip text when the mouse moves over the element.
+
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">
+        Visit our HTML Tutorial
+    </a>
+
+
+
+Link to an Email Address
+    Use mailto: 
+        inside the href attribute to create a link that opens the user's email program 
+            (to let them send a new email):
+
+    <a href="mailto:someone@example.com">
+        Send email
+    </a>
+
+
+
+
+Create a Bookmark in HTML
+    Bookmarks can be useful if a web page is very long.
+
+    To create a bookmark 
+        - first create the bookmark, 
+        - then add a link to it.
+
+    When the link is clicked, the page will scroll down or up to the location with the bookmark.
+
+    First, use the id attribute to create a bookmark:
+        <h2 id="C4">Chapter 4</h2>
+    Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+        <a href="#C4">Jump to Chapter 4</a>
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+HTML Images
+    The HTML <img> tag is used to embed an image in a web page.
+    Images are not technically inserted into a web page; images are linked to web pages. 
+    The <img> tag creates a holding space for the referenced image.
+
+    The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+    The <img> tag has two required attributes:
+        src - Specifies the path to the image
+        alt - Specifies an alternate text for the image
+
+    Syntax
+        <img src="url" alt="alternatetext">
+
+    EX:
+        <img src="img_chania.jpg" alt="Flowers in Chania">
+
+
+
+
+Image Size - Width and Height
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+
+
+
+Images in Another Folder
+    If you have your images in a sub-folder, you must include the folder name in the src attribute:
+        <img src="/images/html5.gif" alt="HTML5 Icon" width="500" height="600">
+
+
+
+
+Images on Another Server/Website
+    Some web sites point to an image on another server.
+    To point to an image on another server, you must specify an absolute (full) URL in the src attribute:
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+
+
+
+Use an Image as a Link
+    To use an image as a link, just put the <img> tag inside the <a> tag:
+
+    <a href="test.html">
+        <img src="smiley.gif" alt="HTML tutorial" width="200" height="150">
+    </a>
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+HTML Favicon
+    A favicon is a small image displayed next to the page title in the browser tab.
+
+    Tip: A favicon is a small image, so it should be a simple image with high contrast.
+
+    A favicon image is displayed to the left of the page title in the browser tab, like this:
+    <head>
+        <title>My Page Title</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
