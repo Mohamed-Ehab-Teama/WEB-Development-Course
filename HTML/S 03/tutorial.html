@@ -1,0 +1,207 @@
+HTML Tables
+    HTML tables allow web developers to arrange data into rows and columns.
+    tr => Table Row
+    th => Table Header
+    td => Table Data
+
+<table>
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+    </tr>
+</table>
+
+
+Table Headers {Horizontal VS Vertical}
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+    </tr>
+    <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+    </tr>
+</table>
+
+
+
+Table Caption
+    <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+
+
+
+Colspan & Rowspan
+<table>
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <td>Jill</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+    </tr>
+    <tr>
+        <td>555-8745</td>
+    </tr>
+</table>
+
+
+
+Table => { Head, Body, Foot }
+<table>
+    <thead>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Sum</td>
+            <td>$180</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+ID vs Class
+
+    <h2 class="city main hello">London</h2>
+    <h2 class="city">Paris</h2>
+    <h2 class="city">Tokyo</h2>
+
+    <h2 id="C4">Chapter 4</h2>
+    <a href="#C4">Jump to Chapter 4</a>
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+HTML Iframes
+    An HTML iframe is used to display a web page within a web page.
+
+    Syntax
+        <iframe src="url" title="description" height="" width=""></iframe>
+
+    Ex:
+        <iframe src="index2.html" height="200" width="300" title="Iframe Example"></iframe>
+
+
+Iframe - Remove the Border
+    <iframe src="test.html" style="border:none;" title="Iframe Example"></iframe>
+
+
+Iframe - Target for a Link
+    An iframe can be used as the target frame for a link
+    The target attribute of the link must refer to the name attribute of the iframe:
+
+    Ex:
+        <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+        <p>
+            <a href="https://www.w3schools.com" target="iframe_a"> W3Schools.com </a>
+        </p>
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
